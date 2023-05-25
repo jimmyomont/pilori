@@ -26,16 +26,6 @@ router.get('/deconnexion', isLogged, authController.logout);
 
 router.get('/profil', isLogged, userController.profil);
 
-// on appelle endpoint une route, une url qui donnera lieu à un résultat dans notre api
-// notre api est une liste de endpoint (d'adresses) qui donneront lieu à un résultat
-router.get('/api/website', websiteController.allJson);
-router.get('/api/website/:id', websiteController.detailsJson);
-router.post('/api/website', websiteController.create);
-router.patch('/api/website/:id', websiteController.update);
-router.delete('/api/website/:id', websiteController.delete);
-
-// router.get('/api/user')
-
 router.use(mainController.notFound);
 
 export default router;

@@ -1,16 +1,10 @@
-import User from "../models/User.js";
+import { users } from '../controllers/authController.js';
 
 const userController = {
   
-  profil: async function(req, res) {
-    try {
-      const user = await User.read(req.session.userId);
-      res.render('profil', { user: user });
-    }
-    catch (error) {
-      console.error(error);
-      res.status(500).render('error');
-    }
+  profil: function(req, res) {
+    const user = users.find(element => element.email === req.session.userEmail);
+    res.render('profil', { user }); // passer user n'est pas nécessairement utile car je l'ai déjà fait dans le middleware addUserData
   },
 
 };
