@@ -1,4 +1,6 @@
-# Intégration PilOri
+# projet de formation 
+
+## Intégration PilOri
 
 - Lancer le projet `npm start`
 
