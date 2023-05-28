@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "feather-icons": "^4.29.0",
+    "lmdb": "^2.8.0",
     "node": "^20.2.0",
     "node-js": "^1.0.0",
     "react": "^18.2.0",
