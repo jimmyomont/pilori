@@ -6,7 +6,7 @@
   <title>PilOri</title>
   <link rel="stylesheet" href="../scss/index.scss">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-  <script src="../js/global.js" type="module" defer></script>
+  <!-- <script src="../js/global.js" type="module" defer></script> -->
 </head>
 <body>
   <header class="header">
@@ -14,20 +14,21 @@
       <img class="logo-img" src="../img/logo.svg" alt="PilOri">
     </a>
     <nav class="menu">
-      <a class="menu-link" href="#">Toutes les tomates</a>
-      <a class="menu-link" href="#">Dénoncer</a>
+      <a class="menu-link" href="./list.html">Toutes les tomates</a>
+      <a class="menu-link" href="./denoncer.html">Dénoncer</a>
     </nav>
     <div class="header-tools">
       <form class="search">
         <input class="search-input" type="search" placeholder="Rechercher...">
-        <button class="search-submit" type="submit">
+        <a href="./rechercheErreur.html" class="search-submit">
           <i data-feather="search"></i>
-        </button>
+        </button></a>
       </form>
       <div class="account">
-        <a class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
-        <a class="account-link" href="#"><i data-feather="user"></i></a>
-        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+        <a id="menuToggler" class="account-link account-link--mobile" href="#"><i data-feather="menu"></i></a>
+        <a id="searchToggler" class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+        <a class="account-link" href="./account.html"><i data-feather="user"></i></a>
+        <a class="account-link" href="./register.html"><i data-feather="log-out"></i></a>
       </div>
     </div>
   </header>
@@ -37,9 +38,9 @@
         <header class="detail-header">
           <div class="detail-intro">
             <h1 class="detail-title">
-              Doctolib au pilori
+              Nom du site au pilori
             </h1>
-            <h2 class="detail-subtitle">Je ne peux pas prendre RDV !</h2>
+            <h2 class="detail-subtitle">Le nom du problème sera ici !</h2>
           </div>
           <button class="detail-share"><i data-feather="share-2"></i></button>
           <span class="detail-counter"><i data-feather="circle"></i> 180</span>
@@ -61,7 +62,7 @@
         </footer>
       </article>
       <footer class="segment-actions">
-        <a href="#" class="btn">
+        <a href="./list.html" class="btn">
           Retour à la liste
         </a>
       </footer>

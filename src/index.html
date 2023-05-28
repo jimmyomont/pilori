@@ -14,21 +14,21 @@
       <img class="logo-img" src="./img/logo.svg" alt="PilOri">
     </a>
     <nav class="menu">
-      <a class="menu-link" href="#">Toutes les tomates</a>
-      <a class="menu-link" href="#">Dénoncer</a>
+      <a class="menu-link" href="./pages/list.html">Toutes les tomates</a>
+      <a class="menu-link" href="./pages/denoncer.html">Dénoncer</a>
     </nav>
     <div class="header-tools">
       <form class="search">
         <input class="search-input" type="search" placeholder="Rechercher...">
-        <button class="search-submit" type="submit">
+        <a href="./pages/rechercheErreur.html" class="search-submit">
           <i data-feather="search"></i>
-        </button>
+        </button></a>
       </form>
       <div class="account">
         <a id="menuToggler" class="account-link account-link--mobile" href="#"><i data-feather="menu"></i></a>
         <a id="searchToggler" class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
-        <a class="account-link" href="#"><i data-feather="user"></i></a>
-        <a class="account-link" href="#"><i data-feather="log-out"></i></a>
+        <a class="account-link" href="./pages/account.html"><i data-feather="user"></i></a>
+        <a class="account-link" href="./pages/register.html"><i data-feather="log-out"></i></a>
       </div>
     </div>
   </header>
@@ -38,8 +38,8 @@
       <h2 class="segment-title">À vos tomates</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eos eum nisi similique omnis amet ex, provident, aperiam incidunt, commodi dolorum ad veritatis beatae fuga dolorem perspiciatis totam quos. Voluptatum eveniet laborum alias, quaerat accusamus adipisci beatae, quidem, quis voluptatibus quam possimus? Inventore quasi totam, dolore assumenda voluptatum accusamus eos.</p>
       <div class="segment-actions">
-        <a class="btn btn--outline" href="#">Envoyer des tomates</a>
-        <a class="btn" href="#">Commencer la dénonciation</a>
+        <a class="btn btn--outline" href="./pages/list.html">Envoyer des tomates</a>
+        <a class="btn" href="./pages/denoncer.html">Commencer la dénonciation</a>
       </div>
     </section>
     <section class="segment">
@@ -63,7 +63,7 @@
           <div class="card-content">
             <h3 class="card-title">Doctolib</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="ca            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -86,7 +86,7 @@
           <div class="card-content">
             <h3 class="card-title">Fnac</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -109,7 +109,7 @@
           <div class="card-content">
             <h3 class="card-title">Agence Nationale des Titres de Sécurité</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -132,7 +132,7 @@
           <div class="card-content">
             <h3 class="card-title">SNCF</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -155,7 +155,7 @@
           <div class="card-content">
             <h3 class="card-title">Craiglist</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -178,7 +178,7 @@
           <div class="card-content">
             <h3 class="card-title">Oclock.io</h3>
             <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime explicabo!</p>
-            <a class="card-more" href="#">Lire la suite</a>
+            <a class="card-more" href="./pages/detail.html">Lire la suite</a>
           </div>
           <footer class="card-actions">
             <a class="card-link" href="#">Consulter le site</a>
@@ -189,7 +189,7 @@
         </article>
       </div>
       <footer class="segment-actions">
-        <a class="btn" href="#">Tout voir</a>
+        <a class="btn" href="./pages/list.html">Tout voir</a>
       </footer>
     </section>
     <section class="segment">
@@ -224,15 +224,16 @@
           </select>
         </label>
         <div class="segment-actions">
-          <button type="submit" class="btn">Soumette le dysfonctionnement à l'équipe de modération</button>
+          <a href="./pages/soumission.html"  class="btn">
+          Soumette le dysfonctionnement à l'équipe de modération</a>
         </div>
       </form>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer-link" href="#">Plan du site</a>
-    <a class="footer-link" href="#">Mentions légales</a>
-    <a class="footer-link" href="#">Contact</a>
+    <a class="footer-link" href="./pages/plan_site.html">Plan du site</a>
+    <a class="footer-link" href="./pages/mentions_legales.html">Mentions légales</a>
+    <a class="footer-link" href="./pages/contact.html">Contact</a>
     <button class="footer-totop" title="Retour en haut de page"><i data-feather="arrow-up-circle"></i></button>
   </footer>
 </body>
