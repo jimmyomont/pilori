@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PilOri</title>
+  <link rel="stylesheet" href="../scss/index.scss">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <!-- <script src="../js/global.js" type="module" defer></script> -->
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="../index.html" title="Retour à l'accueil">
+          <img class="logo-img" src="../img/logo.svg" alt="PilOri">
+        </a>
+        <nav class="menu">
+          <a class="menu-link" href="./list.html">Toutes les tomates</a>
+          <a class="menu-link" href="./denoncer.html">Dénoncer</a>
+        </nav>
+        <div class="header-tools">
+          <form class="search">
+            <input class="search-input" type="search" placeholder="Rechercher...">
+            <a href="./rechercheErreur.html" class="search-submit">
+              <i data-feather="search"></i>
+            </button></a>
+          </form>
+          <div class="account">
+            <a id="menuToggler" class="account-link account-link--mobile" href="#"><i data-feather="menu"></i></a>
+            <a id="searchToggler" class="account-link account-link--mobile" href="#"><i data-feather="search"></i></a>
+            <a class="account-link" href="./account.html"><i data-feather="user"></i></a>
+            <a class="account-link" href="./register.html"><i data-feather="log-out"></i></a>
+          </div>
+        </div>
+      </header>
+  <main class="content">
+        <h1 class="content-title">Dénoncer</h1>
+        <section class="segment">
+            <h2 class="segment-title">Dénoncer un site inaccessible</h2>
+            <form class="form" action="/tomates/denoncer" method="post">
+                <label class="form-field">
+                    Titre du dysfonctionnement
+                    <input type="text" class="form-input" name="titre">
+                </label>
+                <label class="form-field">
+                    Description
+                    <textarea class="form-input form-input--long" name="description"></textarea>
+                </label>
+                <label class="form-field">
+                    Adresse de la page web
+                    <input type="url" class="form-input" name="adresse">
+                </label>
+                <label class="form-field">
+                    Sur quel type de support
+                    <select class="form-input" name="appareil">
+                        <option>Mobile</option>
+                        <option>Ordinateur</option>
+                        <option>Lecteur d'écran</option>
+                    </select>
+                </label>
+                <label class="form-field">
+                    Degré d'importance
+                    <select class="form-input" name="niveau">
+                        <option>Bloquant</option>
+                        <option>Gênant</option>
+                        <option>Casse tête</option>
+                    </select>
+                </label>
+                <div class="segment-actions">
+                    <a href="./soumission.html">
+                    <button type="submit" class="btn">Soumette le dysfonctionnement à l'équipe de modération</button>    
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer-link" href="./plan_site.html">Plan du site</a>
+        <a class="footer-link" href="./mentions_legales.html">Mentions légales</a>
+        <a class="footer-link" href="./contact.html">Contact</a>
+        <button class="footer-totop" title="Retour en haut de page"><i data-feather="arrow-up-circle"></i></button>
+    </footer>
+</body>
+
+</html>
