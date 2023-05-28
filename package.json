@@ -4,7 +4,7 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel {src/*.html,src/**/*.html}",
+    "start": "parcel",
     "build": "parcel build",
     "clear": "rm -rf .parcel-cache public"
   },
