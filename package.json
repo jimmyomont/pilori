@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -19,9 +20,6 @@
   },
   "dependencies": {
     "feather-icons": "^4.29.0",
-    "node": "^20.2.0",
-    "node-js": "^1.0.0",
-    "node.js": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "reset-css": "^5.0.1",
