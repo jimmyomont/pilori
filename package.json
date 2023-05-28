@@ -11,10 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "feather-icon": "^0.1.0",
     "feather-icons": "^4.29.0",
+    "parcel": "^2.9.1",
     "reset-css": "^5.0.1",
-    "sass": "^1.62.1", 
-    "parcel": "^2.9.1"
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.1"
