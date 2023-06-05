@@ -5,6 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
+    "clear": "rm -rf .parcel-cache dis",
     "build": "parcel build"
   },
   "keywords": [],
